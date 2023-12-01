@@ -1,0 +1,227 @@
+{{ encore_entry_link_tags('resume') }}
+{% trans_default_domain "resume" %}
+
+<div id="resume" class="container">
+
+    <div class="py-4 text-center">
+        <h1 class="display-4">{{ "resume.title"|trans }}</h1>
+        {# <p class="lead">Saurais-tu écrire une phrase cool ici ?! Ou alors laisses tomber mais c'est dommage ! :p</p> #}
+    </div>
+
+    <hr>
+
+    <div class="resume-section">
+        <h2>Experiences</h2>
+
+        {#        {{ source('@public_path'~asset('build/images/experiences.svg')) }}#}
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>My Passion Media</h4>
+                    <span class="icon resume-date">May 2022 - July 2023</span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Developer</strong>
+                        <span class="description">
+                        I have successfully led the development and seamless integration of OAuth 2 into our RESTful API, ensuring impeccable and secure authentication for our users.
+                        Additionally, I've taken charge of ERP & CRM integrations, such as Acumatica, utilizing AWS Simple Queue for efficient and automated data transmission.
+                        This streamlined approach has significantly enhanced data management and overall system performance. <br>
+                        I've also contributed to address and resolve customer claims promptly by identifying and swiftly fixing issues.
+                        </span>
+                        <span class="icon location">Port Moody, BC Canada</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>My Passion Media</h4>
+                    <span class="icon resume-date">April 2021 - May 2022</span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Junior Developer</strong>
+                        <span class="description">
+                            As a Junior Developer at My Passion Media, I have been responsible of the development of new features with PHP and Javascript and maintaining and refactoring codes. <br>
+                            I also been responsible of writing automated tests with Selenium to automate user interface tests, ensuring the proper functioning of key features.
+                        </span>
+                        <span class="icon location">Port Moody, BC Canada</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Evalandgo</h4>
+                    <span class="icon resume-date">Sep 2018 - Jul 2019</span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Web Developer</strong>
+                        <span class="description">
+                            After my internship, I was asked to stay as a full time employee.
+                            Working in a tiny team, I had the opportunity to be involved in many aspects of the applications. <br>
+                            One of my biggest missions then was to find the best services on AWS to meet the needs of our applications and to put them in place.
+                        </span>
+                        <span class="icon location">Montpellier - France</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Evalandgo</h4>
+                    <span class="icon resume-date">Feb 2018 - Jul 2018 </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Intern Web Developer</strong>
+                        <span class="description">
+                            During my intership in the company, this one moved up from a start-up incubator to it's own office.
+                            My main mission had been to design an efficient database for a future application and so,
+                            put into practice the knowledge I acquired during my studies.
+                            There, I have been able to practice and enhance my PHP skills and the knowledge of Symfony.
+                        </span>
+                        <span class="icon location">Montpellier - France</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="resume-section">
+        <h2>Education</h2>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Master’s degree</h4>
+                    <h6>Diploma options: Data, Knowledge and Natural Language</h6>
+                    <span class="icon resume-date">Sep 2016 – Jun 2018 </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Master of Computer Science</strong>
+                        <span class="description">
+                            • Data management systems and new approaches for information
+                            persistence
+                            • Extraction, modeling and formal representation of knowledge
+                            • Web standards dedicated to BigData: DataWeb, SemanticWeb,
+                            Open Data
+                        </span>
+                        <span class="icon location">{{ "univesity.name"|trans }} - France</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Bachelor’s degree</h4>
+                    <span class="icon resume-date">Sep 2012 – Jun 2016 </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Bachelor of Computer Science</strong>
+                        <span class="description">
+                            • Data management systems and new approaches for information
+                            persistence
+                            • Extraction, modeling and formal representation of knowledge
+                            • Web standards dedicated to BigData: DataWeb, SemanticWeb,
+                            Open Data
+                        </span>
+                        <span class="icon location">{{ "univesity.name"|trans }} - France</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="resume-section">
+
+        <h2>Skills</h2>
+
+        <div class="experiences" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">PHP</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                            <span class="progress-value">85%</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Symfony Framework</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="75"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                            <span class="progress-value">75%</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="70"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                            <span class="progress-value">75%</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="65"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                            <span class="progress-value">65%</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="65"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                            <span class="progress-value">65%</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Java</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" data-aos="slide-right"
+                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="65"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                            <span class="progress-value">60%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{{ encore_entry_script_tags('resume') }}

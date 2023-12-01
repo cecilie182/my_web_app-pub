@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
+  <file id="cover.en">
+    <unit id="BoYcX7w" name="cover.title">
+      <notes>
+        <note category="file-source" priority="1">my_web_app\templates\Cover\index.html.twig:9</note>
+      </notes>
+      <segment>
+        <source>cover.title</source>
+        <target>Hello there !</target>
+      </segment>
+    </unit>
+    <unit id="kCViBDM" name="cover.lead">
+      <notes>
+        <note category="file-source" priority="1">my_web_app\templates\Cover\index.html.twig:10</note>
+      </notes>
+      <segment>
+        <source>cover.lead</source>
+        <target><![CDATA[My name is Cécilie and I am a 29-year-old Computer Science graduate. </br>
+          Born and raised in Reunion Island, I leaved my island at the age of 18 to go to Montpellier where I studied Computer Sciences and started working in the web development field. </br>
+          I moved to Canada two years ago and started to work for My Passion Media as a PHP Developer.
+        ]]></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

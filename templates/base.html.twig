@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ asset('build/images/icon.ico') }}">
+        <link rel="stylesheet" href="https://use.typekit.net/fbr7gjf.css">
+
+        <title>{% block title %}Cécilie Rivière{% endblock %}</title>
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="header navbar-expand-lg sticky-top">
+            <div class="my-0 mr-auto">
+                {#<img class="logo mr-2" src="{{ asset('build/images/icon.ico') }}" width="30">#}
+                <a href="{{ path('cover') }}"><img class="logo" src="{{ asset('build/images/logo.svg') }}" alt="Cécilie Rivière"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+
+            <nav class="nav-head collapse navbar-collapse" id="menu">
+                <div class="navbar-nav">
+                    <a href="{{ path('cover') }}#resume">Resume</a>
+                    <a href="{{ path('cover') }}#contact">Contact</a>
+
+                    {% if app.request.locale is same as('en') %}
+                        <a href="{{ path('switch_locale', {'locale' : 'fr'}) }}"><span class="flag-icon flag-icon-fr"></span> Français </a>
+                    {% else %}
+                        <a href="{{ path('switch_locale', {'locale' : 'en'}) }}"><span class="flag-icon flag-icon-gb"></span> English </a>
+                    {% endif %}
+
+                </div>
+            </nav>
+
+        </div>
+
+        <main role="main">
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer class="foot mt-auto overtop">
+            <p>© Copyright <script>document.write(new Date().getFullYear());</script> Cécilie Rivière. All rights reserved.</p>
+        </footer>
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>

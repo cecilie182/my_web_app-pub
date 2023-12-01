@@ -1,0 +1,19 @@
+{% use 'bootstrap_4_layout.html.twig' %}
+
+{% block _product_set_products_entry_widget %}
+
+    <div class="col col-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 fw-normal">{{- form_row(form.name) -}}</h4>
+            </div>
+            <div class="card-body">
+                {{- form_row(form.weight) -}}
+                {{- form_row(form.length) -}}
+                {{- form_row(form.width) -}}
+                {{- form_row(form.height) -}}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

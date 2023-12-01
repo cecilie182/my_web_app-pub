@@ -1,0 +1,9 @@
+<h1>Upload a Sudoku Grid</h1>
+
+{{ form_start(form) }}
+    {{ form_row(form.file) }}
+
+    {# TODO : afficher le bouton que si un fichier est chargé #}
+    <button type="submit">Generate grid</button>
+
+{{ form_end(form) }}

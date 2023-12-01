@@ -1,0 +1,62 @@
+#resume {
+    color: #1D0306;
+}
+
+#resume h1, h2 {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    color: #BE313B;
+}
+
+#resume h2 {
+    font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.experiences span {
+    display: block;
+    margin-top: 6px;
+}
+
+.experiences {
+    padding-left: 0.5rem;
+}
+
+.location {
+    color: #BE313B;
+    font-weight: 600;
+}
+
+.location::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+}
+
+section.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 75rem
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh
+    }
+
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important
+    }
+}

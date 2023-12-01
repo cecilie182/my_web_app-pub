@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+  <file id="cover.fr">
+    <unit id="BoYcX7w" name="cover.title">
+      <notes>
+        <note category="file-source" priority="1">my_web_app\templates\Cover\index.html.twig:9</note>
+      </notes>
+      <segment>
+        <source>cover.title</source>
+        <target>Bienvenue !</target>
+      </segment>
+    </unit>
+    <unit id="kCViBDM" name="cover.lead">
+      <notes>
+        <note category="file-source" priority="1">my_web_app\templates\Cover\index.html.twig:10</note>
+      </notes>
+      <segment>
+        <source>cover.lead</source>
+        <target><![CDATA[Mon nom est Cécilie Rivière et je suis diplomée d'un master en Informatique. </br>
+          Originaire de la Réunion, j'ai quitter mon île à l'âge de 18 ans afin de poursuivre mes études à l'Université de Montpellier
+          et ai travaillé pendant plus d'un an en tant que développeur Web au sein d'une société Montpelliéraine.
+          J'ai emmenagé au Canada il y a deux ans et ai travaillé en tant que développeur PHP pour la compagnie My Passion Media.
+        ]]></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

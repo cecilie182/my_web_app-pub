@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "cover" %}
+
+{% block body %}
+    <div id="cover">
+        <div id="cover-background"></div>
+        <div id="cover-lead" class="container">
+{#            <h1 class="cover-heading">{{ "cover.title"|trans }}</h1>#}
+            <img class="bracket" src="{{ asset('build/images/hello.svg') }}" width="300" alt="{{ 'cover.title'|trans }}" data-aos="zoom-in" data-aos-easing="ease">
+            <p class="lead m-4" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="500">{{ "cover.lead"|trans|raw }}</p>
+            <img class="bracket" src="{{ asset('build/images/closing_bracket.svg') }}" width="17" alt="none" data-aos="zoom-in" data-aos-easing="ease">
+
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    {% include 'Cover/resume.html.twig' %}
+
+    {{ render(path('contact')) }}
+
+{% endblock %}

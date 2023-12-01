@@ -1,0 +1,55 @@
+#cover {
+    height: 88vh;
+}
+
+#cover-background {
+    background-image: url('../images/backgroung.jpg');
+    background-attachment:fixed;
+    -webkit-transition: background-image 5s;
+    background-size: cover;
+    top: 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
+
+.overlay {
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.65;
+    filter: alpha(opacity=75);
+    z-index: 2;
+    backdrop-filter: saturate(150%) blur(5px);
+}
+
+#cover-lead {
+    top: 10vw;
+    position: relative;
+    z-index: 3;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.cover-heading {
+    font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+}
+
+/*
+ * Footer
+ */
+.foot {
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+/* 2F221C F9D1B9 E3A280 C6372B 8C230C */

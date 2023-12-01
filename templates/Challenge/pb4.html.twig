@@ -1,0 +1,34 @@
+{% form_theme form 'Challenge/product_theme.html.twig' %}
+
+{{ form_start(form) }}
+
+<h3>Products</h3>
+<div class="products row" data-prototype="{{ form_widget(form.products.vars.prototype)|e('html_attr') }}">
+    {% for product in form.products %}
+
+        <div class="col col-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 fw-normal">{{ form_row(product.name) }}</h4>
+                </div>
+                <div class="card-body">
+                    {{ form_row(product.weight)}}
+                    {{ form_row(product.length)}}
+                    {{ form_row(product.width)}}
+                    {{ form_row(product.height)}}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<button type="button" class="add_product btn-primary btn" data-collection-holder-class="products">New product</button>
+
+{{ form_end(form) }}
+
+
+
+
+
+
+
+

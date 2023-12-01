@@ -1,0 +1,28 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: saturate(125%) blur(10px);
+}
+
+
+#challenge {
+    /*background-color: whitesmoke;*/
+    color: #1d0306;
+    margin-bottom: 3rem;
+}
+
+h1, h2 {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    color: #BE313B;
+}
+
+h2 {
+    font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-header {
+    background-color: #001b30;
+    color: white;
+}

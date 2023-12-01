@@ -1,0 +1,101 @@
+#cover {
+    height: 91vh;
+}
+
+#cover-background {
+    #background-image: url('../images/backgroung.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 5s;
+    background-size: cover;
+    top: 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
+
+@media (max-width: 576px) {
+    #cover-background {
+        background-image: url('../images/backgroung-576.jpg');
+    }
+}
+
+@media (min-width: 576px) {
+    #cover-background {
+        background-image: url('../images/backgroung-768.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    #cover-background {
+        background-image: url('../images/backgroung-1400.jpg');
+    }
+}
+
+.overlay {
+    background-color: #fd565694;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    backdrop-filter: brightness(120%) contrast(90%) saturate(110%) blur(5px);
+}
+
+#cover-lead {
+    z-index: 3;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 400px) {
+    #cover-lead {
+        padding: 10vh;
+    }
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.cover-heading {
+    font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+}
+
+.bracket {
+    align-self: flex-start;
+    max-width: -webkit-fill-available;
+}
+
+
+.foot {
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+/* --------------------------- Colors theme --------------------------- */
+
+.test {
+    color: #fcc9a4;
+    color: #e6a769;
+    color: #d26f4e;
+    color: #be313b;
+    color: #1D0306;
+}
+
+.background-swap {
+    background: #fd565694;
+}
+
+
+/* FCC9A4 E6A769 D26F4E BE313B 1D0306 */
+/* FCC9A4 C5C85B BE8035 BE313B 1D0306 */

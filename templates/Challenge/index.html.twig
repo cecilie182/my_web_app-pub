@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ encore_entry_link_tags('challenge') }}
+
+    <div id="challenge">
+
+        {{ render(path('pb1')) }}
+
+        <div id="problem2" class="container">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Problem #2</h1>
+                <p class="lead">PHP's GD Image</p>
+            </div>
+
+            <div class="text-center">
+                <img class="img-fluid" src="{{ path("pb2")}}">
+            </div>
+        </div>
+
+        <div id="problem3" class="container">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Problem #3</h1>
+                <p class="lead">Query to get a list
+                    with each employee's full name and their address.</p>
+            </div>
+
+            <code>SELECT e.firstName, e.lastName, a.adress, a.city, a.postalCode, p.province
+                FROM Employees AS e, Addresses AS a, Provinces AS p
+                WHERE e.employeeID = a.employeeID and a.provinceID = p.provinceID;</code>
+        </div>
+
+        <div id="problem4" class="container">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Problem #4</h1>
+                <p class="lead">Di Di Co - Products managing interface</p>
+            </div>
+
+            {{ render(path('pb4')) }}
+        </div>
+
+    </div>
+
+    {{ encore_entry_script_tags('challenge') }}
+
+{% endblock %}
+

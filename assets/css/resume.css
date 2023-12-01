@@ -1,0 +1,87 @@
+#resume {
+    color: #1D0306;
+    margin-bottom: 3rem;
+}
+#resume h1, #resume h2 {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    color: #BE313B;
+}
+#resume h2 {
+    font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -------------------------------------------------------- */
+
+.experiences span {
+    display: block;
+    margin-top: 15px;
+}
+.experiences {
+    padding-left: 0.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* -------------------------------------------------------- */
+
+.location {
+    color: #BE313B;
+    font-weight: 600;
+}
+.location::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+}
+.resume-date {
+    padding-left: 0.5rem;
+}
+.resume-date::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    padding-right: 0.25rem;
+}
+
+/* -------------------------------------------------------- */
+
+.description {
+    /*font-family: rosario, serif;*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+    line-height: 30px;
+}
+
+/* ------------------------ SKILLS ------------------------ */
+
+.progress-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.progress-container {
+    position: relative;
+}
+.progress-container .progress-badge {
+    color: #1D0306;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.progress-container .progress {
+    height: 2px;
+    background: rgba(190, 49, 59, 0.15);
+    margin-top: 14px;
+}
+.progress-container .progress .progress-value {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    color: #1D0306;
+    font-size: 1.2em;
+}
+.progress-bar {
+    background-color: #be313b;
+}

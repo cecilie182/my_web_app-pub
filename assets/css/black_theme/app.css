@@ -1,0 +1,46 @@
+@import "~bootstrap";
+
+html,
+body {
+    background-attachment: initial;
+    background: #464B3E;
+    /* font-family: bitter, serif;
+    font-weight: 400;
+    font-style: normal; */
+    color: #fff;
+    height:auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 42px;
+}
+
+body > .cover {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #ffffff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+.icon::before {
+    padding-right: 3px;
+    -webkit-font-smoothing: antialiased;
+}

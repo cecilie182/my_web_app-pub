@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Sudoku</h1>
+
+        {{ include('Sudoku/new.html.twig') }}
+
+        {% if grid is not null %}
+
+            <div class="container">
+                <table class="table table-bordered grid">
+                    <tbody>
+                        {% for row in grid.rows %}
+                            <tr>
+                                {% for cell in row.cells %}
+                                    <td class="text-center">
+                                    {% if cell.value != 0 %}{{ cell.value }}{% endif %}
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <button name="solve" type="submit" value="{{ grid.id }}">Solve grid</button>
+
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('sudoku') }}
+{% endblock %}
